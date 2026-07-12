@@ -667,3 +667,249 @@ h4 { margin: 0 0 6px; font-size: 0.9rem; text-transform: uppercase; letter-spaci
   .project-detailed > * { margin-left: 20px; margin-right: 20px; }
   .project-detailed .tags { padding-left: 20px; padding-right: 20px; }
 }
+
+
+/* V4 — Soft Executive Blue visual system */
+:root {
+  --navy: #182A45;
+  --navy-2: #29425F;
+  --blue: #55759F;
+  --blue-2: #6E88AA;
+  --slate: #8FA1B7;
+  --pale: #E9EEF5;
+  --pale-2: #F2F5F9;
+  --gold: #C6922B;
+  --ink: #26313F;
+  --muted: #667382;
+  --line: #D7E0EA;
+  --paper: #FAFAF8;
+  --soft: #F4F7FA;
+  --radius: 20px;
+  --shadow: 0 16px 42px rgba(24, 42, 69, 0.10);
+}
+
+html, body {
+  font-family: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+h1, h2, h3, h4,
+.brand strong,
+.button,
+.filter,
+.project-org,
+.eyebrow,
+.map-number,
+.project-number,
+.matrix th {
+  font-family: "Manrope", "Segoe UI", system-ui, sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+p, li, td, small, .hero-lead, .section-intro {
+  font-weight: 400;
+}
+
+.eyebrow {
+  font-weight: 700;
+  letter-spacing: 0.10em;
+}
+
+.site-header {
+  background: rgba(250, 250, 248, 0.94);
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 84% 14%, rgba(85,117,159,0.18), transparent 29%),
+    linear-gradient(180deg, #FAFAF8 0%, #F1F5F9 100%);
+}
+
+.hero-card {
+  background: rgba(255,255,255,0.88);
+  border-color: #D8E1EB;
+}
+
+.hero-card blockquote {
+  font-weight: 600;
+}
+
+.button {
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.button.primary {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.button.secondary {
+  background: #fff;
+}
+
+.section.soft {
+  background: #F1F5F8;
+}
+
+.impact-grid {
+  gap: 16px;
+}
+
+.impact-card {
+  border: 0;
+  box-shadow: 0 10px 28px rgba(24,42,69,.07);
+  min-height: 142px;
+}
+
+.impact-card:nth-child(1) {
+  background: #182A45;
+  color: #fff;
+}
+
+.impact-card:nth-child(2) {
+  background: #55759F;
+  color: #fff;
+}
+
+.impact-card:nth-child(3) {
+  background: #8FA1B7;
+  color: #fff;
+}
+
+.impact-card:nth-child(4) {
+  background: #E9EEF5;
+  color: #182A45;
+}
+
+.impact-card strong {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.42rem;
+}
+
+.impact-card span {
+  opacity: .92;
+  font-size: .96rem;
+}
+
+.capability-card {
+  background: #fff;
+  border-color: #DCE4ED;
+  box-shadow: 0 8px 24px rgba(24,42,69,.05);
+}
+
+.capability-card:nth-child(1) { background: #F8FAFC; }
+.capability-card:nth-child(2) { background: #F1F5F9; }
+.capability-card:nth-child(3) { background: #EDF2F7; }
+.capability-card:nth-child(4) { background: #E8EEF4; }
+
+.icon-circle {
+  background: var(--navy);
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+
+.delivery-map-section {
+  background: linear-gradient(180deg, #FAFAF8 0%, #EEF3F7 100%);
+}
+
+.delivery-map {
+  border: 0;
+  box-shadow: 0 14px 36px rgba(24,42,69,.08);
+}
+
+.delivery-map article {
+  border-color: rgba(24,42,69,.10);
+}
+
+.delivery-map article:nth-child(1) { background: #F7F9FB; }
+.delivery-map article:nth-child(2) { background: #EEF3F7; }
+.delivery-map article:nth-child(3) { background: #DDE6EF; }
+.delivery-map article:nth-child(4) { background: #182A45; }
+
+.project-card {
+  border-color: #D9E2EC;
+  box-shadow: 0 10px 28px rgba(24,42,69,.06);
+}
+
+.project-card:hover {
+  box-shadow: 0 18px 42px rgba(24,42,69,.11);
+}
+
+.project-detailed.tone-a::before { background: #182A45; }
+.project-detailed.tone-b::before { background: #55759F; }
+.project-detailed.tone-c::before { background: #8FA1B7; }
+.project-detailed.tone-d::before { background: #C5D0DD; }
+
+.project-summary {
+  background: #F2F5F8;
+  border-left-color: #6E88AA;
+}
+
+.project-detail-grid > div {
+  background: #FCFDFE;
+  border-color: #DCE4ED;
+}
+
+.tags span,
+.method-chips span,
+.approach-list span {
+  background: #E9EEF5;
+  color: #29425F;
+  font-weight: 600;
+}
+
+.filter {
+  background: #F8FAFC;
+  border-color: #D8E1EB;
+  font-weight: 600;
+}
+
+.filter.active,
+.filter:hover {
+  background: #29425F;
+  border-color: #29425F;
+}
+
+.section.dark {
+  background: #182A45;
+}
+
+.case-study-list details {
+  border-color: rgba(255,255,255,.15);
+}
+
+.matrix th {
+  background: #29425F;
+  font-weight: 700;
+}
+
+.credential-panel {
+  background: #29425F;
+}
+
+.contact-section {
+  background: linear-gradient(145deg, #F7F9FC, #EAF0F6);
+}
+
+.site-footer {
+  background: #182A45;
+}
