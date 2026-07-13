@@ -986,3 +986,150 @@ p, li, td, small, .hero-lead, .section-intro {
     padding: 28px;
   }
 }
+
+
+/* V6 — Positioning band and equal learning cards */
+.positioning-band {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  width: min(980px, 100%);
+  margin-bottom: 24px;
+  overflow: hidden;
+  border: 1px solid #D7E0EA;
+  border-radius: 16px;
+  background: #D7E0EA;
+  box-shadow: 0 10px 26px rgba(24,42,69,.07);
+}
+
+.positioning-band span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 12px 18px;
+  background: #E9EEF5;
+  color: #182A45;
+  font-family: "Manrope", "Segoe UI", system-ui, sans-serif;
+  font-size: .84rem;
+  font-weight: 650;
+  letter-spacing: .035em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.positioning-band span:nth-child(2) {
+  background: #DCE6F0;
+}
+
+.positioning-band span:nth-child(3) {
+  background: #CEDAE7;
+}
+
+.learning-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.learning-heading h2 {
+  max-width: none;
+  font-size: clamp(2rem, 3.2vw, 3.2rem);
+  font-weight: 650;
+}
+
+.learning-equal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.learning-card {
+  min-height: 100%;
+  padding: 34px 38px;
+  border-radius: var(--radius);
+  box-shadow: 0 14px 34px rgba(24,42,69,.08);
+}
+
+.learning-card h3 {
+  margin: 0 0 22px;
+  font-size: clamp(1.45rem, 2.1vw, 1.95rem);
+  font-weight: 650;
+}
+
+.education-card {
+  border: 1px solid #D7E0EA;
+  background: #F7F9FB;
+}
+
+.education-card .credential-list {
+  margin: 0;
+}
+
+.education-card .credential-list li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  padding: 17px 0;
+}
+
+.education-card .credential-list strong {
+  font-family: "Manrope", "Segoe UI", system-ui, sans-serif;
+  font-weight: 600;
+}
+
+.education-card .credential-list span {
+  color: #667382;
+  text-align: right;
+}
+
+.certification-card {
+  border: 1px solid rgba(255,255,255,.16);
+  background: #55759F;
+  color: #FFFFFF;
+}
+
+.certification-card h3 {
+  color: #FFFFFF;
+}
+
+.certification-card ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 22px;
+  color: #FFFFFF;
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.certification-card li::marker {
+  color: #E9EEF5;
+}
+
+@media (max-width: 780px) {
+  .positioning-band {
+    grid-template-columns: 1fr;
+  }
+
+  .positioning-band span {
+    min-height: 48px;
+  }
+
+  .learning-equal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-card {
+    padding: 28px;
+  }
+
+  .education-card .credential-list li {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .education-card .credential-list span {
+    text-align: left;
+  }
+}
