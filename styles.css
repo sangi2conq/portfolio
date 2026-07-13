@@ -1133,3 +1133,14 @@ p, li, td, small, .hero-lead, .section-intro {
     text-align: left;
   }
 }
+
+
+/* V7 — Stack Project Portfolio heading content vertically */
+.project-heading-stacked {
+  display: block;
+}
+
+.project-heading-stacked .section-intro {
+  margin-top: 16px;
+  max-width: 920px;
+}
